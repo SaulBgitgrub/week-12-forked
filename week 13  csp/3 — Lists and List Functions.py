@@ -62,15 +62,37 @@ print(my_list)
 # .remove() - removes the first occurrence of a specific value
 # .sort() - sorts the list in ascending order
 # .reverse() - reverses the order of the list
+# Why is a list more useful than a variable
+#A list can hpld multiple values.
+# While a variable can only hold one value at a time
+cakes = ['chocolate', 'vanilla', 'red velvet', 'carrot']
+print(cakes)
+#access the first item
+print(cakes[0]) # chocolate
+# access the last item
+print(cakes[-1]) # carrot
+#want to chocolate cake instead of vanilla
+cakes[0] = 'strawberry'
+print(cakes)
+cakes.append('lemon')
+print(cakes)
+cakes[1] = 'chocolate'
+print(cakes)
+#Remove the last cake
+cakes.pop()
+print(cakes)
+#Insert a new cake at index 2
+cakes.insert(2, 'funfetti')
+print(cakes) # ['strawberry', 'chocolate', 'funfetti']
 
 # Examples:
 
 my_list = ['apple', 'banana', 'cherry']
-print(my_list[0])         # apple
-print(my_list[1:])        # ['banana', 'cherry']
+# print(my_list[0])         # apple
+# print(my_list[1:])        # ['banana', 'cherry']
 
-my_list.append('grape')
-print(my_list)
+# my_list.append('grape')
+# print(my_list)
 
 my_list.pop(1)
 print(my_list)
@@ -84,13 +106,41 @@ print(numbers)
 # Practice Problems:
 
 # Create a list with 5 of your favorite foods.
-
+e_list = ['potatoes', 'pizza', 'beans', 'fries', 'chicken']
+print(e_list)
 # Print the second and last item.
-
+print(e_list[-1])
 # Add a new item using .append().
-
+e_list.append('jelly')
+print(e_list)
 # Remove the first item using .pop(0).
-
+e_list.pop(0)
+print(e_list)
 # Reverse your list using .reverse().
 
 # Create a list of 3 lists (matrix), and access the middle element.
+
+#Sets = [1, 2, 3]
+#Sets are unordered collections of unique items
+#Sets do not support indexing or slicing
+#Sets are mutable
+#Sets are created using curly braces
+#Do sets allow duplicate items? No, sets do not allow duplicate items
+my_set = {1, 2, 3, 4, 5}
+print(my_set) # (1, 2, 3, 4, 5)
+print(type(my_set)) # <class 'set'>
+#add an item to the set
+my_set.add(5)
+#check if an item is in the set
+print(4 in my_set) # True
+print(3 in my_set) # False
+
+# Tuples are an ordered collections of items
+# Tuplesm are an immutable. meaning you cannot modify them after creation
+# Tuples are created using  parentheses ()
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple)
+print(type(my_tuple)) # <class 'tuple'>
+print(my_tuple[0]) # 1
+print(my_tuple[1:4]) # [2, 3, 4]
+#Try to modify the tuple (Will raise an error)
