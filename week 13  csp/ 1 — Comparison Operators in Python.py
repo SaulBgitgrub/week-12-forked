@@ -60,11 +60,21 @@ if score >= 60:
 else:
     print("You didn't pass")
 
-#Ask for password
+
+# practice problem :
+# where a student must check if their score is greater than or equal to 60 to pass a test.
+# # The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
+
+#1. Student Score
+Score2 = int(input("What is your score: "))
+if Score2 <= 100 and Score2 >= 60:
+    print("You passed the test")
+elif Score2 > 100:
+    print("You failed the test")
+
+#2. Ask for password
 password = input("What is your password ")
 if len(password) >= 8 and any(char.isdigit() for char in password):
     print("Password is valid")
 else:
     print("Password is invalid.")
-# practice problem :
-# where a student must check if their score is greater than or equal to 60 to pass a test.# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"

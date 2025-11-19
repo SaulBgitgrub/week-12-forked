@@ -35,11 +35,24 @@ print(first_col)       # [1, 4, 7]
 # Practice Problems:
 
 # Build a matrix variable containing 3 lists of 3 numbers each.
+matrix2 = [
+    [8, 10, 11],
+    [4, 6, 7],
+    [1, 81, 90]
+]
+
 
 # Print the first list.
-
+print(matrix2[2][1])
 # Print the second item from the third list.
-
+print(matrix2[2][1])
 # Use a list comprehension to extract the last item from each sub-list.
-
+attempt = [row[2] for row in matrix2]
+print(attempt)
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+m3 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9, 10]
+]
+print(m3[2][3])
