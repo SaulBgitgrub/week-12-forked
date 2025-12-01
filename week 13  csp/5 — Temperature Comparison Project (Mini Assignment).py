@@ -11,12 +11,12 @@
 # If the temperature is out of range (below -10 or above 110), display “Extreme temperature warning!”
 
 # Starter Code:
-TO = int(input("What is the temperature outside: "))
-if 80 <= TO < 110:
+tO = int(input("What is the temperature outside: "))
+if 80 <= tO <= 110:
     print("It is Hot outside")
-elif 50 <= TO < 80:
+elif 50 <= tO < 80:
     print("It is Warm outside")
-elif -10 < TO < 50:
+elif -10 <= tO < 50:
     print("It is Cold outside")
 else:
     print("Extreme temperature warning!")

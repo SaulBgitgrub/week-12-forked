@@ -73,12 +73,13 @@ print(matrix2[2][1])
 attempt = [row[2] for row in matrix2]
 print(attempt)
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
-squares = [x**2 for x in range(1,11)]
+squares = [x**2 for x in range(1,11)] #for numbers 1-10 it squares them
 for x in range(1, 11):
-    print(x**2)
-m3 = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9, 10]
-]
-print(m3[2][3])
+    print(x**2) 
+    # Doubles x
+# m3 = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9, 10]
+# ]
+# print(m3[2][3])
